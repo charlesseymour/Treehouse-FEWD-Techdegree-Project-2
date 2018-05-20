@@ -36,6 +36,7 @@ a:link {
 
 .profile-intro {
   text-align: center;
+  font-size: 1.25em;
 }
 
 img {
@@ -48,6 +49,56 @@ img {
 ==================================== */
 
 .wrapper {
-	width: 90%;
-	margin: 0 auto;
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  
+  ul.main-nav li {
+    display: inline-block;
+	background-color: initial;
+  }  
+  
+  ul.main-nav li:nth-child(2) {
+	margin: 0 40px;
+  }
+  
+  .profile-intro {
+	text-align: left;
+  }
+  
+  .profile-pic {
+	float: right;
+	content: url("../images/responsive-layout-profile-tablet.png");
+	margin-top: 0;
+	margin-left: 20px;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;	  
+  }
+  
+}
+
+@media (min-width: 1023px) {
+  
+  .name {
+    float: left;
+  }
+  
+  .main-nav {
+	float: right;
+  }
+  
+  .profile-pic {
+    content: url("../images/responsive-layout-profile.png");
+  }
+  
 }
