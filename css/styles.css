@@ -1,0 +1,46 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fdf7ff;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+ul.main-nav {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+ul.main-nav li {
+  background-color: white;
+  padding: 10px 0;
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}  
+
+a:link {
+  color: initial;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
