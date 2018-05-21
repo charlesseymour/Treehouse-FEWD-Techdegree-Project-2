@@ -41,7 +41,20 @@ a:link {
 
 img {
   display: block;
+  max-width: 100%;
   margin: 30px auto;
+}
+
+main {
+  background-color: white;
+}
+
+section {
+	margin: 10px auto;
+}
+
+h2, h3, section p {
+	text-align: center;
 }
 
 /* ================================= 
