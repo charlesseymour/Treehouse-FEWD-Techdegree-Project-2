@@ -5,6 +5,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #fdf7ff;
+  margin: 0;
 }
 
 .name {
@@ -21,7 +22,7 @@ ul.main-nav {
 ul.main-nav li {
   background-color: white;
   padding: 10px 0;
-  margin: 5px 0;
+  margin: 5px 15px;
 }
 
 a {
@@ -37,6 +38,7 @@ a:link {
 .profile-intro {
   text-align: center;
   font-size: 1.25em;
+  margin: 0 30px 40px;
 }
 
 img {
@@ -47,6 +49,7 @@ img {
 
 main {
   background-color: white;
+  padding-top: 20px;
 }
 
 section {
@@ -62,7 +65,6 @@ h2, h3, section p {
 ==================================== */
 
 .wrapper {
-  width: 90%;
   margin: 30px auto;
 }
 
@@ -88,8 +90,7 @@ h2, h3, section p {
   .profile-pic {
 	float: right;
 	content: url("../images/responsive-layout-profile-tablet.png");
-	margin-top: 0;
-	margin-left: 20px;
+	margin: 0 30px 50px;
   }
   
   .clearfix:after {
@@ -104,14 +105,25 @@ h2, h3, section p {
   
   .name {
     float: left;
+	margin-left: 50px;
+  }
+  
+  ul.main-nav li:nth-child(3) {
+    margin-right: 0;
   }
   
   .main-nav {
 	float: right;
+	margin-right: 50px;
   }
   
   .profile-pic {
+	margin-right: 50px;
     content: url("../images/responsive-layout-profile.png");
+  }
+  
+  .profile-intro {
+    margin-left: 50px;
   }
   
 }
