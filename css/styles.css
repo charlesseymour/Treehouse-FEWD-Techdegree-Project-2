@@ -59,6 +59,7 @@ main {
 section {
 	max-width: 300px;
 	margin: 10px auto 40px;
+	display: inline-block;
 }
 
 
@@ -72,6 +73,13 @@ h2, h3, section p {
 
 .wrapper {
   margin: 30px auto;
+}
+
+.portfolio-wrapper {
+/*margin: 0 auto;
+  display: inline;
+  margin-left: 100px;*/
+  text-align: center;
 }
 
 /* ================================= 
