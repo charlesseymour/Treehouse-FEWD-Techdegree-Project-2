@@ -79,10 +79,9 @@ h2, h3, section p {
 }
 
 .portfolio-wrapper {
-/*margin: 0 auto;
-  display: inline;
-  margin-left: 100px;*/
+  margin: 0 auto;
   text-align: center;
+  max-width: 1216px;
 }
 
 /* ================================= 
@@ -93,42 +92,25 @@ h2, h3, section p {
   
   ul.main-nav li {
     display: inline-block;
-	background-color: initial;
+	  background-color: initial;
   }  
   
   ul.main-nav li:nth-child(2) {
-	margin: 0 40px;
+	  margin: 0 40px;
   }
   
   .profile-intro {
-	text-align: left;
+    text-align: left;
   }
   
   .profile-pic {
-	float: right;
-	content: url("../images/responsive-layout-profile-tablet.png");
-	margin: 0 30px 50px;
+    float: right;
+    content: url("../images/responsive-layout-profile-tablet.png");
+    margin: 0 30px 50px;
   }
   
   section {
-	max-width: 340px;
-	display: inline-block;
-  }
-  
-  section:nth-child(odd) {
-	margin: 10px 5px 40px 0;
-  }
-  
-  section:nth-child(even) {
-    margin: 10px 0 40px 5px;
-  }
-  
-  #thumbnail_1 {
-    content: url("http://via.placeholder.com/340x190");
-  }
-  
-  #thumbnail_2 {
-    content: url("http://via.placeholder.com/340x190");
+	  display: inline-block;
   }
   
   .clearfix:after {
@@ -139,11 +121,51 @@ h2, h3, section p {
   
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  section {
+    max-width: 340px;
+  }     
+  
+  section:nth-child(odd) {
+    margin: 10px 5px 40px 0;
+  }
+  
+  section:nth-child(even) {
+    margin: 10px 0 40px 5px;
+  }
+  
+  #thumbnail_1 {
+    content: url("../images/portfolio-1-medium.png");
+  }
+  
+  #thumbnail_2 {
+    content: url("../images/portfolio-2-medium.png");
+  }
+  
+  #thumbnail_3 {
+    content: url("../images/portfolio-3-medium.png");
+  }
+  
+  #thumbnail_4 {
+    content: url("../images/portfolio-4-medium.png");
+  }
+  
+  #thumbnail_5 {
+    content: url("../images/portfolio-5-medium.png");
+  }
+  
+  #thumbnail_6 {
+    content: url("../images/portfolio-6-medium.png");
+  }
+  
+}
+
+@media (min-width: 1024px) {
   
   .name {
     float: left;
-	margin-left: 50px;
+	  margin-left: 30px;
   }
   
   ul.main-nav li:nth-child(3) {
@@ -151,17 +173,27 @@ h2, h3, section p {
   }
   
   .main-nav {
-	float: right;
-	margin-right: 50px;
+    float: right;
+    margin-right: 30px;
   }
   
   .profile-pic {
-	margin-right: 50px;
     content: url("../images/responsive-layout-profile.png");
   }
   
-  .profile-intro {
-    margin-left: 50px;
+  
+  section {
+    max-width: 300px;
+    height: 330px;
+    overflow: hidden;
+  }
+  
+  section:nth-child(3n+2) {
+    margin: 10px 5px 40px;
+  }
+  
+  main {
+    margin: 0 30px;
   }
   
 }
