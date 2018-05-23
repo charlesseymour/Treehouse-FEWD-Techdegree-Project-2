@@ -59,12 +59,15 @@ main {
 section {
 	max-width: 300px;
 	margin: 10px auto 40px;
-	display: inline-block;
 }
-
 
 h2, h3, section p {
 	text-align: center;
+}
+
+.blurb {
+	width: 90%;
+	margin: 0 auto;
 }
 
 /* ================================= 
@@ -105,6 +108,27 @@ h2, h3, section p {
 	float: right;
 	content: url("../images/responsive-layout-profile-tablet.png");
 	margin: 0 30px 50px;
+  }
+  
+  section {
+	max-width: 340px;
+	display: inline-block;
+  }
+  
+  section:nth-child(odd) {
+	margin: 10px 5px 40px 0;
+  }
+  
+  section:nth-child(even) {
+    margin: 10px 0 40px 5px;
+  }
+  
+  #thumbnail_1 {
+    content: url("http://via.placeholder.com/340x190");
+  }
+  
+  #thumbnail_2 {
+    content: url("http://via.placeholder.com/340x190");
   }
   
   .clearfix:after {
