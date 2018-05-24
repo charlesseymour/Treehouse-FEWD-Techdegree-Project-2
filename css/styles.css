@@ -54,6 +54,7 @@ img {
 main {
   background-color: white;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 section {
@@ -68,6 +69,37 @@ h2, h3, section p {
 .blurb {
 	width: 90%;
 	margin: 0 auto;
+}
+
+.contact {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+hr {
+  width: 90%;
+}
+
+.bottom-nav {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.bottom-name {
+  float: left;
+}
+
+.bottom-nav-links {
+  display: none;
+  margin: 0;
+}
+
+.bottom-nav-top {
+  float: right;
 }
 
 /* ================================= 
@@ -117,6 +149,28 @@ h2, h3, section p {
     content: "";
     display: table;
     clear: both;	  
+  }
+  
+  .contact {
+    width: 500px;
+  }
+  
+  .bottom-nav-top {
+    display: none;
+  }
+  
+  .bottom-nav-links {
+    float: right;
+    display: inline-block;
+  }
+  
+  .bottom-nav-links {
+    list-style-type: none;
+  }
+  
+  .bottom-nav-links li {
+    margin: 5px 15px;
+    display: inline;
   }
   
 }
